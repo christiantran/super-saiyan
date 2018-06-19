@@ -1,12 +1,15 @@
 ﻿using System;
+using SuperSaiyan.Project;
 
-namespace super_saiyan
+namespace SuperSaiyan
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Game fight = new Game();
+            fight.Setup();
+            fight.Loop();
         }
     }
 }
