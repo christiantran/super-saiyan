@@ -33,11 +33,6 @@ namespace SuperSaiyan.Project
         Console.WriteLine("*    'help' will show you this list again \n");
         Console.WriteLine("Press 'enter' to play");
         Console.ReadLine();
-
-
-
-
-
         }
 
         public void Help()
@@ -62,6 +57,11 @@ namespace SuperSaiyan.Project
 
         }
 
+        public void AddItem()
+        {
+
+        }
+
         public void UseItem(string name)
         {
 
@@ -77,17 +77,22 @@ namespace SuperSaiyan.Project
 
         }
 
-        public void AddRooms()
+        public void CreateRooms()
         {
-            var gotenRoom = new Room(string name);
-
-            // Console.WriteLine("Sonny? Is that you Sonny?! Can you please help us! My name is Goten and my dad Goku sent me to find somebody to help him defeat the horrible villains Piccolo and Vegeta! Go! Go now! The Earth is depending on you! \n");
-            // Console.WriteLine("Press 'enter' to accept this responsibility");
-            // Console.ReadLine();
-            // Console.Clear();
-
+            Room gotenRoom = new Room("The Forest", "You are hiking through the beautiful forests surrounding your home when all of a sudden you hear your name. 'Sonny? Is that you Sonny?! We need your help! My name is Goten and my dad Goku sent me to find somebody to help him defeat the horrible villains Piccolo and Vegeta! They are on the otherside of these trees in the open meadow. Go! Go now! The Earth is depending on you!' ", "Press 'enter' to accept this responsibility -or- 'quit' to reject this responsibility");
             Rooms.Add(gotenRoom);
+
+            Room gokuRoom = new Room("The Meadow", "description", "instruction");
+            Rooms.Add(gokuRoom);
+
+            Room bulmaRoom = new Room("name", "description", "instruction");
+            Rooms.Add(bulmaRoom);
+
+            Room gohanRoom = new Room("name", "description", "instruction");
+            Rooms.Add(gohanRoom);
         }
+
+
 
     }
 }
