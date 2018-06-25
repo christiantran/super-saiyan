@@ -19,6 +19,11 @@ namespace SuperSaiyan.Project
             return null;
         }
 
+        public void AddExit(string direction, Room room)
+        {
+            Exits.Add(direction, room);
+        }
+
         public Room(string name, string description, string instructions)
         {
             Name = name;

@@ -9,7 +9,6 @@ namespace SuperSaiyan
         {
             Game fight = new Game();
             fight.Setup();
-            fight.Loop();
         }
     }
 }

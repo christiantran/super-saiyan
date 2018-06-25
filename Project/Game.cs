@@ -14,25 +14,22 @@ namespace SuperSaiyan.Project
         {
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Red;
-        }
-
-        public void Loop()
-        {
-        Console.Clear();
-        Console.WriteLine();
-        Console.WriteLine("***** IN REMEMBRANCE OF SONNY AND HIS LOVE FOR DRAGON BALL Z ***** \n");
-        Console.WriteLine("This game is your typical 'choose your own adventure game' where you can decide your own path. You will be fighting side by side with characters from Dragon Ball Z to help save the Earth. Good Luck! \n");
-        Console.WriteLine("Press 'enter' for game instructions \n");
-        Console.ReadLine();
-        Console.WriteLine("How to Play: \n");
-        Console.WriteLine("In this fight to save the Earth you will be given multiple options that you must choose from. Once you have made a decision you will type the text that corresponds with your choice. \n");
-        Console.WriteLine("If you are ever unsure about what to do next just type in one of these words at anytime:\n");
-        Console.WriteLine("*    'reset' allows you to reset the game and start at the beginning");
-        Console.WriteLine("*    'repeat' will repeat the instructions");
-        Console.WriteLine("*    'quit' allows you to quit the game at anytime");
-        Console.WriteLine("*    'help' will show you this list again \n");
-        Console.WriteLine("Press 'enter' to play");
-        Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("***** IN REMEMBRANCE OF SONNY AND HIS LOVE FOR DRAGON BALL Z ***** \n");
+            Console.WriteLine("This game is your typical 'choose your own adventure game' where you can decide your own path. You will be fighting side by side with characters from Dragon Ball Z to help save the Earth. Good Luck! \n");
+            Console.WriteLine("Press 'enter' for game instructions \n");
+            Console.ReadLine();
+            Console.Clear();
+            Console.WriteLine("How to Play: \n");
+            Console.WriteLine("In this fight to save the Earth you will be given multiple options that you must choose from. Once you have made a decision you will type the text that corresponds with your choice. \n");
+            Console.WriteLine("If you are ever unsure about what to do next just type in one of these words at anytime:\n");
+            Console.WriteLine("*    'reset' allows you to reset the game and start at the beginning");
+            Console.WriteLine("*    'repeat' will repeat the instructions");
+            Console.WriteLine("*    'quit' allows you to quit the game at anytime");
+            Console.WriteLine("*    'help' will show you this list again \n");
+            Console.WriteLine("Press 'enter' to play");
+            Console.ReadLine();
         }
 
         public void Help()
@@ -49,7 +46,6 @@ namespace SuperSaiyan.Project
             Console.Clear();
             Playing = true;
             Setup();
-            Loop();
         }
 
         public void Repeat()
