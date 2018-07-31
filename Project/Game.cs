@@ -78,13 +78,13 @@ namespace SuperSaiyan.Project
             Room gotenRoom = new Room("The Forest", "You are hiking through the beautiful forests surrounding your home when all of a sudden you hear your name. 'Sonny? Is that you Sonny?! We need your help! My name is Goten and my dad Goku sent me to find somebody to help him defeat the horrible villains Piccolo and Vegeta! They are on the otherside of these trees in the open meadow. Go! Go now! The Earth is depending on you!' ", "Press 'enter' to accept this responsibility -or- 'quit' to reject this responsibility");
             Rooms.Add(gotenRoom);
 
-            Room gokuRoom = new Room("The Meadow", "description", "instruction");
+            Room gokuRoom = new Room("The Meadow", "description");
             Rooms.Add(gokuRoom);
 
-            Room bulmaRoom = new Room("name", "description", "instruction");
+            Room bulmaRoom = new Room("name", "description");
             Rooms.Add(bulmaRoom);
 
-            Room gohanRoom = new Room("name", "description", "instruction");
+            Room gohanRoom = new Room("name", "description");
             Rooms.Add(gohanRoom);
         }
 

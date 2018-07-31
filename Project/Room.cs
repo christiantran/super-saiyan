@@ -6,29 +6,28 @@ namespace SuperSaiyan.Project
     {
         public string Name { get; set; }
         public string Description { get; set; }
-        public string Instructions { get; set; }
         public List<Item> Items { get; set; }
-        public Dictionary <string, Room> Exits = new Dictionary <string, Room>();
+        
+        public Dictionary<string, Room> Exits = new Dictionary<string, Room>();
 
         public Room Go(string direction)
         {
-            if(Exits.ContainsKey(direction))
+            if (Exits.ContainsKey(direction))
             {
-            return Exits [direction];
+                return Exits[direction];
             }
             return null;
         }
 
-        public void AddExit(string direction, Room room)
+        public void UseItem(Item item)
         {
-            Exits.Add(direction, room);
+
         }
 
-        public Room(string name, string description, string instructions)
+        public Room(string name, string description)
         {
             Name = name;
             Description = description;
-            Instructions = instructions;
             Items = new List<Item>();
         }
     }
