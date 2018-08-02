@@ -10,7 +10,7 @@ namespace SuperSaiyan.Project
         public List<Room> Rooms = new List<Room>();
         public bool Playing;
 
-        public void Setup()
+        public void Play()
         {
             Console.BackgroundColor = ConsoleColor.Yellow;
             Console.ForegroundColor = ConsoleColor.Red;
@@ -30,27 +30,35 @@ namespace SuperSaiyan.Project
             Console.WriteLine("*    'help' will show you this list again \n");
             Console.WriteLine("Press 'enter' to play");
             Console.ReadLine();
+
+            // while (Playing)
+            // {
+            //     UserCommand();
+            // }
+
+        }
+
+        public void Setup()
+        {
+
         }
 
         public void Help()
         {
-        Console.WriteLine("*    'reset' allows you to reset the game and start at the beginning");
-        Console.WriteLine("*    'repeat' will repeat the instructions");
-        Console.WriteLine("*    'quit' allows you to quit the game at anytime");
-        Console.WriteLine("*    'help' will show you this list again \n");
+            Console.WriteLine("*    'reset' allows you to reset the game and start at the beginning");
+            Console.WriteLine("*    'quit' allows you to quit the game at anytime");
+            Console.WriteLine("*    'help' will show you this list again \n");
         }
 
         public void Reset()
         {
-            Playing = false;
-            Console.Clear();
-            Playing = true;
-            Setup();
+            Play();
+
         }
 
-        public void Repeat()
+        public void Quit()
         {
-
+            Playing = false;
         }
 
         public void AddItem()
